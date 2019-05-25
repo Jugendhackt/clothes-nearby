@@ -1,7 +1,7 @@
 [
   {
     "ID": 1,
-    "Name": "Normale Jeans"
+    "Name": "Normale Jeans",
     "Datum" : "25/05/2019",
     "Lat": 50.941278,
     "Long": 6.958281,
@@ -14,7 +14,7 @@
   },
   {
     "ID": 2,
-    "Name" : "winter Pulli"
+    "Name" : "Winter Pulli",
     "Datum": "24/05/2019",
     "Lat": 50.912178,
     "Long": 6.960789,
@@ -27,7 +27,7 @@
   },
   {
     "ID": 3,
-    "Name" : "Elegantes KLeid"
+    "Name" : "Elegantes Kleid",
     "Datum": "30/04/2019",
     "Lat": 50.930592,
     "Long":  6.945431,
@@ -40,7 +40,7 @@
   },
   {
     "ID": 5,
-    "Name" : "hübscher Kinderrock"
+    "Name" : "Hübscher Kinderrock",
     "Datum": "31/03/2019",
     "Lat": 50.942394,
     "Long": 6.980449,
@@ -53,7 +53,7 @@
   },
   {
     "ID": 6,
-    "Name" : "Coole Lederjacke"
+    "Name" : "Coole Lederjacke",
     "Datum": "20/04/2019",
     "Lat": 50.931858,
     "Long": 6.955544,
@@ -66,10 +66,10 @@
   },
   {
     "ID": 7,
-    "Name": "Leoparden T-Shirt"
+    "Name": "Leoparden T-Shirt",
     "Datum": "26/03/2019",
-    "Lat": 50.942499,
-    "Long": 6.980949,
+    "Lat": 50.935,
+    "Long": 6.976,
     "Category": "T-Shirt",
     "Preis": 15,
     "Farbe": "grau",

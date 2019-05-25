@@ -29,11 +29,12 @@ async function drawShops() {
 
 function onMarkerClick(e) {
   var point = e.target.myCustomId;
-  document.getElementById("category").innerHTML = "Category : " + point.Category;
-  document.getElementById("datum").innerHTML = "Datum : " + point.Datum;
-  document.getElementById("preis").innerHTML = "Preis : " + point.Preis;
-  document.getElementById("farbe").innerHTML = "Farbe : " + point.Farbe;
-  document.getElementById("marke").innerHTML = "Marke : " + point.Marke;
-  document.getElementById("land").innerHTML = "Land : " + point.Herkunftsland;
-  document.getElementById("nachhaltigkeit").innerHTML = "Nachhaltigkeit : " + point.Nachhaltigkeit;
+  document.getElementById("name").innerHTML = point.Name;
+  document.getElementById("category").innerHTML = "<b>Category : </b>" + point.Category;
+  document.getElementById("datum").innerHTML = "<b>Datum : </b>" + point.Datum;
+  document.getElementById("preis").innerHTML = "<b>Preis : </b>" + point.Preis + " Euro";
+  document.getElementById("farbe").innerHTML = "<b>Farbe : </b>" + point.Farbe;
+  document.getElementById("marke").innerHTML = "<b>Marke : </b>" + point.Marke;
+  document.getElementById("land").innerHTML = "<b>Land : </b>" + point.Herkunftsland;
+  document.getElementById("nachhaltigkeit").innerHTML = "<b>Nachhaltigkeit : </b>" + point.Nachhaltigkeit;
 }
