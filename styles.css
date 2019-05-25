@@ -38,10 +38,10 @@ html, body {
 	margin: 0;
 	height: 100%;
 	width: 100%;
-	background-color: purple;
+	background-color: rgb(0,168,201);
 }
 .main_map {
 width:100%;
-height:calc(100% - 52px);
+height:calc(100%);
 z-index: 1;
 }

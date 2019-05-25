@@ -1,5 +1,9 @@
 async function drawShops() {
-	fetch("daten.json").then(function(response){return(response.json())}).then(function(json){
+	fetch("./daten.json")
+  .then(function(response){
+    return response.json();
+  })
+  .then(function(json){
 		Layers=[];
 		var topicColors={
 		    "Unterwäsche":"orange",
@@ -16,7 +20,7 @@ async function drawShops() {
 				Layers[point.Category].addTo(mymap);
 			}
 			L.marker([point.Lat, point.Long],{icon: Icons[topicColors[point.Category]]}).addTo(Layers[point.Category]).
-				bindPopup("<b>"+point.Category+"</b><br />"+point.Full_ref+"<br/><i>Data from "+point.Yr_start+" to "+point.Yr_end+".</i><br />Published in by "+point.Ref);
+				bindPopup(point.Category);
 		})
 		layerList=document.getElementById("layerlist");
 		Object.keys(Layers).forEach(function(layer){
