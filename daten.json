@@ -63,5 +63,18 @@
     "Herkunftsland": "Österreich",
     "Nachhaltigkeit": "ja",
     "Marke": "C&A"
+  },
+  {
+    "ID": 6,
+    "Datum": "20/04/2019",
+    "Lat":  50.931858,
+    "Long": 6.955544,
+    "Name"
+    "Category": "Jacke",
+    "Preis": 6,
+    "Farbe": "schwarz",
+    "Herkunftsland": "China",
+    "Nachhaltigkeit": "nein",
+    "Marke": "H&M"
   }
 ]
