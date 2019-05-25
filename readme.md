@@ -11,4 +11,5 @@
             Agnes (aka. atotschnig)
 
  Mentoren:  Loreen,
-            Adrian
+            Adrian,
+            Karsten
