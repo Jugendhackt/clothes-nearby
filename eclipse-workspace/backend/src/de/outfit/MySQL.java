@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 public class MySQL {
 	public static String ip = "127.0.0.1";
@@ -34,14 +35,31 @@ public class MySQL {
 		} catch (SQLException ex) {System.out.println("Verbindung fehlgeschlagen!");}
 	}
 	
-	private static void data() throws SQLException {
-		String query = "select * FROM " + dbname;
-		Statement stmt = con.createStatement();
-		ResultSet rset = stmt.executeQuery(query);
+	public static ArrayList<clothesobject> data() {
+		ArrayList<clothesobject> objectlist = new ArrayList<clothesobject>();
 		
-		// TODO
-		
-		rset.close();
-		stmt.close();
+		try {
+			// Objekt aus Datenbank auslesen
+			
+			String query = "select * FROM " + dbname;
+			Statement stmt = con.createStatement();
+			ResultSet rset;
+			
+			rset = stmt.executeQuery(query);
+			
+			
+			
+			
+			// Objekt zu clothesobject übergeben
+			while(rset.next()) {
+				clothesobject object = new clothesobject();
+				object.createObject(rset.getInt(0), rset.getString(1), rset.getFloat(2), rset.getFloat(3), rset.getString(4), rset.getString(5), rset.getFloat(6), rset.getString(7), rset.getString(8), rset.getBoolean(9), rset.getString(10));
+				objectlist.add(object);
+			}
+			
+			rset.close();
+			stmt.close();
+		} catch(SQLException ex) {}
+		return objectlist;
 	}
 }
