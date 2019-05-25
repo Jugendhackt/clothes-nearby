@@ -1,0 +1,47 @@
+.red{
+	color:rgb(220, 0, 49);
+}
+.blue{
+	color:rgb(18, 127, 206);
+}
+.green{
+	color:rgb(0, 186, 36);
+}
+.orange{
+	color:rgb(212, 129, 6);
+}
+.yellow{
+	color:rgb(200, 203, 6);
+}
+.grey{
+	color:rgb(123, 123, 123);
+}
+.pink{
+	color:rgb(217, 123, 166);
+}
+
+h1{
+	margin-left: 8px!important;
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+}
+ul{
+	list-style:none;
+}
+
+html, body {
+	font-family: 'Raleway', sans-serif;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	background-color: purple;
+}
+.main_map {
+width:100%;
+height:calc(100% - 52px);
+z-index: 1;
+}
