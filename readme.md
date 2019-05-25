@@ -5,4 +5,4 @@
  
  Authors: Jana (aka. j8na), Jan-Hendrik (aka. JH220), Benny (aka. AuspiciousLynx), Mathilda (aka. tanzmaustilda), Jian (aka. JianKitSune), Agnes (aka. atotschnig)
  
- Mentor: Loreen, Adrian
+ Mentoren: Loreen, Adrian
