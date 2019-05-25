@@ -198,6 +198,7 @@ org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
 !SESSION 2019-05-25 13:10:43.712 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
 java.version=1.8.0_201
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
