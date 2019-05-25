@@ -3,6 +3,6 @@
  Dieses Projekt ist OpenSource und daher frei zur Verfügung.
  Ich möchte aber bitten, dass dieses Projekt nicht als eigenes ausgegeben wird.
  
- Authors: Jana (aka. j8na), Jan-Hendrik (aka. JH220), Benny (aka. AuspiciousLynx), Mathilda (aka. tanzmaustilda), Jian (aka. JianKitSune), Agnes (aka. atotschnig)
+ Authoren: Jana (aka. j8na), Jan-Hendrik (aka. JH220), Benny (aka. AuspiciousLynx), Mathilda (aka. tanzmaustilda), Jian (aka. JianKitSune), Agnes (aka. atotschnig)
  
  Mentoren: Loreen, Adrian
