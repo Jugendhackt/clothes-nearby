@@ -4,8 +4,7 @@
     "Datum": "25/05/2019",
     "Lat": 50.941278,
     "Long": 6.958281,
-    "Name": "Coole Hose",
-    "Category": "Hosen",
+    "Category": "Hose",
     "Preis": 19,
     "Farbe": "tuerkis",
     "Herkunftsland": "Deutschland",
@@ -16,8 +15,7 @@
     "ID": 2,
     "Datum": "24/05/2019",
     "Lat": 50.912178,
-    "Long": 6.860789,
-    "Name"
+    "Long": 6.960789,
     "Category": "Pullover",
     "Preis": 30,
     "Farbe": "blau",
@@ -30,8 +28,7 @@
     "Datum": "30/04/2019",
     "Lat": 50.930592,
     "Long":  6.945431,
-    "Name"
-    "Category": "KLeid",
+    "Category": "Kleid",
     "Preis": 200,
     "Farbe": "schwarz",
     "Herkunftsland": "Frankreich",
@@ -39,27 +36,13 @@
     "Marke": "Madelene"
   },
   {
-    "ID": 4,
-    "Datum": "26/03/2019",
-    "Lat": 50.742499,
-    "Long": 6.480949,
-    "Name"
-    "Category": "T-Shirt",
-    "Preis": 15,
-    "Farbe": "grau",
-    "Herkunftsland": "Deutschland",
-    "Nachhaltigkeit": "nein",
-    "Marke": "Takko"
-  },
-  {
     "ID": 5,
     "Datum": "31/03/2019",
-    "Lat": 50.742394,
-    "Long": 6.480449,
-    "Name"
-    "Category": "Röcke",
+    "Lat": 50.942394,
+    "Long": 6.980449,
+    "Category": "Rock",
     "Preis": 20,
-    "Farbe": "Pink",
+    "Farbe": "pink",
     "Herkunftsland": "Österreich",
     "Nachhaltigkeit": "ja",
     "Marke": "C&A"
@@ -67,14 +50,25 @@
   {
     "ID": 6,
     "Datum": "20/04/2019",
-    "Lat":  50.931858,
+    "Lat": 50.931858,
     "Long": 6.955544,
-    "Name"
     "Category": "Jacke",
     "Preis": 6,
     "Farbe": "schwarz",
     "Herkunftsland": "China",
     "Nachhaltigkeit": "nein",
     "Marke": "H&M"
+  },
+  {
+    "ID": 4,
+    "Datum": "26/03/2019",
+    "Lat": 50.942499,
+    "Long": 6.980949,
+    "Category": "T-Shirt",
+    "Preis": 15,
+    "Farbe": "grau",
+    "Herkunftsland": "Deutschland",
+    "Nachhaltigkeit": "nein",
+    "Marke": "Takko"
   }
 ]
