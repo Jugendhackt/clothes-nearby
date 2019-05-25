@@ -1,6 +1,6 @@
 [
   {
-    "Obs": 1,
+    "ID": 1,
     "Datum": "25/05/2019",
     "Lat": 41.57,
     "Long": 2.35,
@@ -11,5 +11,57 @@
     "Herkunftsland": "Deutschland",
     "Nachhaltigkeit": "ja",
     "Marke": "H&M"
+  },
+  {
+    "ID": 2,
+    "Datum": "24/05/2019",
+    "Lat": 50.912178,
+    "Long": 6.860789,
+    "Name"
+    "Category": "Pullover",
+    "Preis": 30,
+    "Farbe": "blau",
+    "Herkunftsland": "China",
+    "Nachhaltigkeit": "ja",
+    "Marke": "Takko"
+  },
+  {
+    "ID": 3,
+    "Datum": "30/04/2019",
+    "Lat": 50.930592,
+    "Long":  6.945431,
+    "Name"
+    "Category": "KLeid",
+    "Preis": 200,
+    "Farbe": "schwarz",
+    "Herkunftsland": "Frankreich",
+    "Nachhaltigkeit": "nein",
+    "Marke": "Madelene"
+  },
+  {
+    "ID": 4,
+    "Datum": "26/03/2019",
+    "Lat": 50.742499,
+    "Long": 6.480949,
+    "Name"
+    "Category": "T-Shirt",
+    "Preis": 15,
+    "Farbe": "grau",
+    "Herkunftsland": "Deutschland",
+    "Nachhaltigkeit": "nein",
+    "Marke": "Takko"
+  },
+  {
+    "ID": 5,
+    "Datum": "31/03/2019",
+    "Lat": 50.742394,
+    "Long": 6.480449,
+    "Name"
+    "Category": "Röcke",
+    "Preis": 20,
+    "Farbe": "Pink",
+    "Herkunftsland": "Österreich",
+    "Nachhaltigkeit": "ja",
+    "Marke": "C&A"
   }
 ]
