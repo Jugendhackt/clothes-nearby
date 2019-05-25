@@ -18,8 +18,22 @@ async function drawShops() {
 				Layers[point.Category]=L.layerGroup();
 				Layers[point.Category].addTo(mymap);
 			}
-			L.marker([point.Lat, point.Long],{icon: Icons[topicColors[point.Category]]}).addTo(Layers[point.Category]).
-				bindPopup(point.Category);
+			var marker = L.marker([point.Lat, point.Long],{icon: Icons[topicColors[point.Category]]});
+      marker.addTo(Layers[point.Category]);
+			marker.bindPopup(point.Category);
+      marker.myCustomId = point;
+      marker.on('click', onMarkerClick);
 		})
 	})
+}
+
+function onMarkerClick(e) {
+  var point = e.target.myCustomId;
+  document.getElementById("category").innerHTML = "Category : " + point.Category;
+  document.getElementById("datum").innerHTML = "Datum : " + point.Datum;
+  document.getElementById("preis").innerHTML = "Preis : " + point.Preis;
+  document.getElementById("farbe").innerHTML = "Farbe : " + point.Farbe;
+  document.getElementById("marke").innerHTML = "Marke : " + point.Marke;
+  document.getElementById("land").innerHTML = "Land : " + point.Herkunftsland;
+  document.getElementById("nachhaltigkeit").innerHTML = "Nachhaltigkeit : " + point.Nachhaltigkeit;
 }
