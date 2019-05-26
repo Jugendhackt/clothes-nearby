@@ -20,7 +20,7 @@ html, body {
 }
 
 .main_map {
-	flex:3;
+	flex:2;
 	height: 105%;
 	z-index: 1;
 }

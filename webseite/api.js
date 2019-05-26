@@ -38,4 +38,5 @@ function onMarkerClick(e) {
   document.getElementById("marke").innerHTML = "<b>Marke : </b>" + point.marke;
   document.getElementById("land").innerHTML = "<b>Herkunftsland : </b>" + point.Herkunftsland;
   document.getElementById("nachhaltigkeit").innerHTML = "<b>Nachhaltigkeit : </b>" + point.nachhaltigkeit;
+	document.getElementById("route").innerHTML = "<b>Route :</b> https://maps.openrouteservice.org/directions?n1=50.935&n2=6.965&n3=14&a=50.935,6.965," + point.latitude + "," + point.longitude +"&b=0&c=0&k1=en-US&k2=km"
 }
