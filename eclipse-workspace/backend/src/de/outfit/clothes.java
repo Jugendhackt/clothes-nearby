@@ -1,6 +1,7 @@
 package de.outfit;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -30,8 +31,13 @@ public class clothes extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Gson gson = new Gson();
 		
-		String json = gson.toJson(MySQL.connect());
+		ArrayList<clothesobject> array = MySQL.connect();
 		
+		System.out.println("Daten 2: " + array.get(0).name + array.get(0).datum);
+		
+		String json = gson.toJson(array);
+		
+		response.addHeader("Access-Control-Allow-Origin", "*");
 		response.getWriter().append(json);
 	}
 

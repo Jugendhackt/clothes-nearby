@@ -62,6 +62,9 @@ public class MySQL {
 				clothesobject object = new clothesobject();
 				//object.createObject(rset.getInt(0), rset.getString(1), rset.getFloat(2), rset.getFloat(3), rset.getString(4), rset.getString(5), rset.getFloat(6), rset.getString(7), rset.getString(8), rset.getBoolean(9), rset.getString(10));
 				object.createObject(rset.getInt(1), rset.getString(2), rset.getFloat(3), rset.getFloat(4), rset.getString(5), rset.getString(6), rset.getFloat(7), rset.getString(8), rset.getString(9), rset.getBoolean(10), rset.getString(11));
+				
+				System.out.println("Daten: " + object.datum + object.name + object.category);
+				
 				objectlist.add(object);
 			}
 			
@@ -73,6 +76,7 @@ public class MySQL {
 			System.out.println("------------");
 			ex.printStackTrace();
 		}
+		System.out.println("Daten 3: " + objectlist.get(0).name + objectlist.get(0).datum);
 		return objectlist;
 	}
 }
