@@ -14,13 +14,13 @@ async function drawShops() {
 		    "Pullover":"yellow"
 		};
 		json.forEach(function(point){
-			if(Layers[point.Category]==undefined) {
-				Layers[point.Category]=L.layerGroup();
-				Layers[point.Category].addTo(mymap);
+			if(Layers[point.category]==undefined) {
+				Layers[point.category]=L.layerGroup();
+				Layers[point.category].addTo(mymap);
 			}
-			var marker = L.marker([point.Lat, point.Long],{icon: Icons[topicColors[point.Category]]});
-      marker.addTo(Layers[point.Category]);
-			marker.bindPopup(point.Name);
+			var marker = L.marker([point.latitude, point.longitude],{icon: Icons[topicColors[point.category]]});
+      marker.addTo(Layers[point.category]);
+			marker.bindPopup(point.name);
       marker.myCustomId = point;
       marker.on('click', onMarkerClick);
 		})
@@ -29,12 +29,13 @@ async function drawShops() {
 
 function onMarkerClick(e) {
   var point = e.target.myCustomId;
-  document.getElementById("name").innerHTML = point.Name;
-  document.getElementById("category").innerHTML = "<b>Category : </b>" + point.Category;
-  document.getElementById("datum").innerHTML = "<b>Datum : </b>" + point.Datum;
-  document.getElementById("preis").innerHTML = "<b>Preis : </b>" + point.Preis + " Euro";
-  document.getElementById("farbe").innerHTML = "<b>Farbe : </b>" + point.Farbe;
-  document.getElementById("marke").innerHTML = "<b>Marke : </b>" + point.Marke;
+  document.getElementById("name").innerHTML = point.name;
+  document.getElementById("bild").innerHTML = "<img src='fotos/image" + point.obs + ".jpeg' alt='Foto vom Kleidungsstück' height='200'>";
+  document.getElementById("category").innerHTML = "<b>Category : </b>" + point.category;
+  document.getElementById("datum").innerHTML = "<b>Datum : </b>" + point.datum;
+  document.getElementById("preis").innerHTML = "<b>Preis : </b>" + point.preis + " Euro";
+  document.getElementById("farbe").innerHTML = "<b>Farbe : </b>" + point.farbe;
+  document.getElementById("marke").innerHTML = "<b>Marke : </b>" + point.marke;
   document.getElementById("land").innerHTML = "<b>Herkunftsland : </b>" + point.Herkunftsland;
-  document.getElementById("nachhaltigkeit").innerHTML = "<b>Nachhaltigkeit : </b>" + point.Nachhaltigkeit;
+  document.getElementById("nachhaltigkeit").innerHTML = "<b>Nachhaltigkeit : </b>" + point.nachhaltigkeit;
 }

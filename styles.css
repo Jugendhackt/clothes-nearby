@@ -30,12 +30,12 @@ html, body {
 	padding-top: 15px;
 }
 
-.info{
+#listeInfo {
 	flex:2;
 	padding-left: 50px;
 }
 
-.flex-container {
+#overall {
   display: flex;
   flex-direction: row;
   padding-left: 40px;
