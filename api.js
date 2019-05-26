@@ -1,5 +1,5 @@
 async function drawShops() {
-	fetch("./daten.json")
+	fetch("http://192.168.88.30:8080/backend/clothes")
   .then(function(response){
     return response.json();
   })
@@ -20,7 +20,7 @@ async function drawShops() {
 			}
 			var marker = L.marker([point.Lat, point.Long],{icon: Icons[topicColors[point.Category]]});
       marker.addTo(Layers[point.Category]);
-			marker.bindPopup(point.Category);
+			marker.bindPopup(point.Name);
       marker.myCustomId = point;
       marker.on('click', onMarkerClick);
 		})
@@ -35,6 +35,6 @@ function onMarkerClick(e) {
   document.getElementById("preis").innerHTML = "<b>Preis : </b>" + point.Preis + " Euro";
   document.getElementById("farbe").innerHTML = "<b>Farbe : </b>" + point.Farbe;
   document.getElementById("marke").innerHTML = "<b>Marke : </b>" + point.Marke;
-  document.getElementById("land").innerHTML = "<b>Land : </b>" + point.Herkunftsland;
+  document.getElementById("land").innerHTML = "<b>Herkunftsland : </b>" + point.Herkunftsland;
   document.getElementById("nachhaltigkeit").innerHTML = "<b>Nachhaltigkeit : </b>" + point.Nachhaltigkeit;
 }
