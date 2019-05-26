@@ -8,7 +8,8 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/jhspa/OneDrive/Dokumente/Jugend Hackt/GitHub/klamotten-tinder/klamotten-tinder/apis/servlet.jar"/>
-	<classpathentry kind="lib" path="C:/Users/jhspa/OneDrive/Dokumente/Jugend Hackt/GitHub/klamotten-tinder/klamotten-tinder/apis/gson-2.8.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/jhspa/OneDrive/Dokumente/Jugend Hackt/GitHub/klamotten-tinder/klamotten-tinder/apis/javax.servlet-3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/jhspa/OneDrive/Dokumente/Jugend Hackt/GitHub/klamotten-tinder/klamotten-tinder/apis/gson-2.8.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/jhspa/OneDrive/Dokumente/Jugend Hackt/GitHub/klamotten-tinder/klamotten-tinder/apis/mysql-connector-java-8.0.16.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
