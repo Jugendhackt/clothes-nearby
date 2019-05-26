@@ -1,8 +1,10 @@
 package de.outfit;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,6 +14,7 @@ import com.google.gson.Gson;
 /**
  * Servlet implementation class closes
  */
+@WebServlet("/clothes")
 public class clothes extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -26,11 +29,15 @@ public class clothes extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		Gson gson = new Gson();
 		
-		String json = gson.toJson(MySQL.data());
+		ArrayList<clothesobject> array = MySQL.connect();
 		
+		System.out.println("Daten 2: " + array.get(0).name + array.get(0).datum);
+		
+		String json = gson.toJson(array);
+		
+		response.addHeader("Access-Control-Allow-Origin", "*");
 		response.getWriter().append(json);
 	}
 
