@@ -24,10 +24,7 @@ public class MySQL {
 		
 		// Treiber laden
 		try {Class.forName("com.mysql.cj.jdbc.Driver").newInstance();}
-		catch(Exception ex) {
-			System.out.println("Treiber fehlgeschlagen!");
-			ex.printStackTrace();
-		}
+		catch(Exception ex) {}
 		
 		// Verbindung aufbauen
 		try {
@@ -37,17 +34,14 @@ public class MySQL {
 			array = data();
 			
 			con.close();
-		} catch (SQLException ex) {System.out.println("Verbindung fehlgeschlagen!"); ex.printStackTrace();}
-		
+		} catch (SQLException ex) {}
 		return array;
 	}
 	
 	public static ArrayList<clothesobject> data() {
 		ArrayList<clothesobject> objectlist = new ArrayList<clothesobject>();
-		
 		try {
 			// Objekt aus Datenbank auslesen
-			
 			String query = "select * FROM " + tablename;
 			Statement stmt = con.createStatement();
 			ResultSet rset;
@@ -60,23 +54,15 @@ public class MySQL {
 			// Objekt zu clothesobject übergeben
 			while(rset.next()) {
 				clothesobject object = new clothesobject();
-				//object.createObject(rset.getInt(0), rset.getString(1), rset.getFloat(2), rset.getFloat(3), rset.getString(4), rset.getString(5), rset.getFloat(6), rset.getString(7), rset.getString(8), rset.getBoolean(9), rset.getString(10));
-				object.createObject(rset.getInt(1), rset.getString(2), rset.getFloat(3), rset.getFloat(4), rset.getString(5), rset.getString(6), rset.getFloat(7), rset.getString(8), rset.getString(9), rset.getBoolean(10), rset.getString(11));
 				
-				System.out.println("Daten: " + object.datum + object.name + object.category);
+				object.createObject(rset.getInt(1), rset.getString(2), rset.getFloat(3), rset.getFloat(4), rset.getString(5), rset.getString(6), rset.getFloat(7), rset.getString(8), rset.getString(9), rset.getBoolean(10), rset.getString(11));
 				
 				objectlist.add(object);
 			}
 			
 			rset.close();
 			stmt.close();
-		} catch(SQLException ex) {
-			System.out.println("------------");
-			System.out.println("O_O");
-			System.out.println("------------");
-			ex.printStackTrace();
-		}
-		System.out.println("Daten 3: " + objectlist.get(0).name + objectlist.get(0).datum);
+		} catch(SQLException ex) {}
 		return objectlist;
 	}
 }
