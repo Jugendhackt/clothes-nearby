@@ -1,7 +1,9 @@
 package de.outfit;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,7 +19,10 @@ public class clothes extends HttpServlet {
     public clothes() {}
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("Neue Abfrage der Datenbank von folgender IP: " + request.getLocalAddr());
+		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+		String uhrzeit = sdf.format(new Date());
+		
+		System.out.println(uhrzeit + " | Neue Abfrage der Datenbank von folgender IP: " + request.getLocalAddr());
 		
 		Gson gson = new Gson();
 		ArrayList<clothesobject> array = MySQL.connect();
